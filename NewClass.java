@@ -138,7 +138,6 @@ public class NewClass {
         List<String> cultures = getcultures();
         Map<String,Integer> traits = getTraits();
         Map<Integer,Integer> characters = getCharacters(cultures,traits);
-        Map<Integer,Integer> flipped = new TreeMap<>();
         List<Map.Entry<Integer,Integer>> sorted = sortMap(characters);
         for (int i = 0; i < 200; i++) {
             System.out.println(sorted.get(i).getKey());
